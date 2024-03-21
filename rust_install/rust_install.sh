@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 if test -e ./zshrc
     then 
         echo "export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup" >> ~/.zshrc
