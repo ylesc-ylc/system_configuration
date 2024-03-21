@@ -1,10 +1,7 @@
 #!/bin/bash
-if test -e ./zshrc
-    then 
-        echo "export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup" >> ~/.zshrc
-    else
-        echo "export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup" >> ~/.bashrc
-fi
+
+echo 'export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup'  >> .zshrc
+echo 'export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup'  >> .bashrc
 
 wget https://github.com/ylesc-ylc/system_configuration/blob/main/rust_install/rustup-init.sh | sh
 
